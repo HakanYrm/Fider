@@ -1,0 +1,26 @@
+--cpu Cortex-M0
+"fider\startup_stm32f051x8.o"
+"fider\stm32f0xx_hal_i2c_ex.o"
+"fider\stm32f0xx_hal_dma.o"
+"fider\stm32f0xx_hal.o"
+"fider\stm32f0xx_hal_pwr_ex.o"
+"fider\stm32f0xx_hal_flash.o"
+"fider\stm32f0xx_hal_uart_ex.o"
+"fider\stm32f0xx_hal_cortex.o"
+"fider\stm32f0xx_hal_tim_ex.o"
+"fider\stm32f0xx_hal_gpio.o"
+"fider\stm32f0xx_hal_pwr.o"
+"fider\stm32f0xx_hal_uart.o"
+"fider\stm32f0xx_hal_i2c.o"
+"fider\stm32f0xx_hal_rcc.o"
+"fider\stm32f0xx_hal_rcc_ex.o"
+"fider\stm32f0xx_hal_flash_ex.o"
+"fider\stm32f0xx_hal_tim.o"
+"fider\system_stm32f0xx.o"
+"fider\main.o"
+"fider\stm32f0xx_hal_msp.o"
+"fider\stm32f0xx_it.o"
+--library_type=microlib --strict --scatter "Fider\Fider.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "Fider.map" -o Fider\Fider.axf
